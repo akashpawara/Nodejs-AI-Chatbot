@@ -185,8 +185,9 @@ $(document).ready(function(){
                 </div>
             `);
           //  `https://www.ai-systems.co.uk/message/?name=${message}`
+           // http://185.40.20.175:9080/message/?name=${message}
             
-            fetch(`http://185.40.20.175:9080/message/?name=${message}`)
+            fetch(`https://www.ai-systems.co.uk/message/?name=${message}`)
                 .then(response=> {
                   return response.json()
                 })
